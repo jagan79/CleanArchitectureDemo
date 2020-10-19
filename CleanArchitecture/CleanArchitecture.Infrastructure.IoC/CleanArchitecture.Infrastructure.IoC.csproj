@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.9" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitecture.Application\CleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Bus\CleanArchitecture.Infrastructure.Bus.csproj" />
     <ProjectReference Include="..\CleanArchitecture.Infrastructure.Data\CleanArchitecture.Infrastructure.Data.csproj" />
   </ItemGroup>
 
