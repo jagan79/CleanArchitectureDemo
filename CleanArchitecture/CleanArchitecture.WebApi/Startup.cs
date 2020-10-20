@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MediatR;
 using Microsoft.OpenApi.Models;
+using CleanArchitecture.WebApi.Configurations;
 
 namespace CleanArchitecture.WebApi
 {
@@ -47,7 +48,10 @@ namespace CleanArchitecture.WebApi
             );
             services.AddMediatR(typeof(Startup));
 
+            services.RegisterAutoMapper();
             services.AddControllers();
+
+
             RegisterServices(services);
         }
 
