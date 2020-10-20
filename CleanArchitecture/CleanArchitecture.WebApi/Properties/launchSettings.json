@@ -12,7 +12,8 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/course",
+      //"launchUrl": "api/course",
+      "launchUrl": "swagger/index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,8 +21,9 @@
     "CleanArchitecture.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/course",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      //"launchUrl": "api/course",
+      "launchUrl": "swagger/index.html",
+      "applicationUrl": "https://localhost:5003;http://localhost:5002",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
